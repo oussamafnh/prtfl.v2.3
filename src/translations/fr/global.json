@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "bio": "BIO",
+        "showcase": "SHOWCASE",
+        "hire_me": "EMBAUCHEZ MOI"
+    },
+    "home": {
+        "line1": "BIENVENUE DANS MON ROYAUME NUMÉRIQUE.",
+        "line2": "JE SUIS OUSSAMA FANNAH, UN DÉVELOPPEUR FULLSTACK FERVENT",
+        "line3": "OÙ LES IDÉES PRENNENT VIE À TRAVERS LE CODE.",
+        "go_down": "DESCENDRE"
+    }
+}
