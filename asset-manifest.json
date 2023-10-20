@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oussamafnh/prtfl.v2.3/static/css/main.c745aae7.css",
+    "main.js": "/oussamafnh/prtfl.v2.3/static/js/main.075a58d7.js",
+    "index.html": "/oussamafnh/prtfl.v2.3/index.html",
+    "main.c745aae7.css.map": "/oussamafnh/prtfl.v2.3/static/css/main.c745aae7.css.map",
+    "main.075a58d7.js.map": "/oussamafnh/prtfl.v2.3/static/js/main.075a58d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c745aae7.css",
+    "static/js/main.075a58d7.js"
+  ]
+}
