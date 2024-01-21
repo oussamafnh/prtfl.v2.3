@@ -19,7 +19,9 @@ body {
 
 .navbar {
   width: 100%;
-  background-color: #ffffff;
+  /* background: rgba(255, 255, 255, 0.5); */
+  /* -webkit-backdrop-filter: blur(42px);
+  backdrop-filter: blur(42px); */
   position: fixed;
   font-family: 'Roboto Mono', monospace;
   height: 10vh;
@@ -28,14 +30,13 @@ body {
   /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
 }
 
-.nav-container {
+/* .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 8.2vh;
-  background-color: #ffffff;
-
-}
+position: absolute;
+} */
 
 .navbar .menu-items {
   display: flex;
@@ -50,8 +51,8 @@ body {
   text-decoration: none;
   color: #0e2431;
   font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem;
+  font-size: 3vh;
+  padding: 1.5vh;
 }
 
 .navbar .nav-container a:hover {
@@ -62,7 +63,7 @@ body {
   display: block;
   position: relative;
   height: 8.2vh;
-  background-color: #ffffff;
+  background-color: #ffffff00;
 
 }
 
@@ -110,7 +111,7 @@ body {
 .hamburger:before,
 .hamburger:after,
 .hamburger div {
-  background: #3a3434;
+  background: #040D12;
   content: "";
   display: block;
   height: 3px;
@@ -126,7 +127,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: #040D12;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -143,11 +144,21 @@ body {
   transition: transform 0.4s ease-in-out;
 }
 
+
+
+
+
+
+
+
+
+
 .navbar .menu-items {
   padding-top: 120px;
   background-color: #ffffff;
   height: 100vh;
   width: 100%;
+  position: absolute;
   transform: translate(-130%);
   display: flex;
   flex-direction: column;
@@ -190,19 +201,38 @@ body {
   flex-direction: row;
 }
 
+@media (max-width: 768px) {
+
+
+  .montion {
+    position: absolute;
+    bottom: 5vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
 .logo {
   margin-top: -0vh;
-  position: relative;
+  position: absolute;
   float: left;
-  top: 5px;
-  left: 15px;
-  font-size: 1.2rem;
-  color: #0e2431;
+  top: 1vh;
+  left: 3vh;
+  color: #040D12;
+  z-index: 1002;
 }
+
+
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
   transform: translateX(0);
 }
+
+.nav-container input[type="checkbox"]:checked~.navbar {
+  background-color: #040D12;
+}
+
 
 /* .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
   transform: rotate(43deg);

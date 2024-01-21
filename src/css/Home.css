@@ -8,17 +8,17 @@
 
 .text {
     width: 50%;
-    padding-left: 40px;
+    padding-left: 4vh;
     margin: auto 0;
 }
 
 .text h1 {
-    font-size: 2.65rem;
-    color: #333;
+    font-size: 6.5vh;
+    color: #040D12;
 }
 
 .text p {
-    font-size: 1.3rem;
+    font-size: 3.25vh;
     color: #555;
 }
 
@@ -33,6 +33,7 @@
 
 .image img {
     height: 90vh;
+    width: 100%;
 }
 
 
@@ -48,24 +49,24 @@
 
 .buttons button {
     margin-top: 10vh;
-    height: 50px;
+    height: 9vh;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #555;
-    border: none;
+    background: #55555500;
+    /* border: none; */
+    border: #040D12 2px solid;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-    background: #555;
 }
 
 .buttons .noselect1 {
-    width: 320px;
+    width: 51vh;
 }
 
 .buttons .noselect2 {
-    width: 230px;
+    width: 33vh;
 }
 
 .buttons button,
@@ -74,32 +75,38 @@
 }
 
 .buttons button .text {
-    color: white;
+    color: #040D12;
     font-weight: bold;
+    font-size: 2.3vh;
 }
 
 .buttons .noselect1 .text {
-    width: 280px;
+    width: 33vh;
 }
 
 .buttons .noselect2 .text {
-    width: 190px;
+    width: 20vh;
 }
 
 .buttons button .icon {
     position: static;
-    border-left: 1px solid #555;
-    height: 40px;
-    width: 40px;
+    /* border-left: 1px solid #040D12; */
+    height: 9vh;
+    width: 9vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .buttons button svg {
-    width: 15px;
-    fill: #eee;
+    width: 2.3vh;
+    fill: #000000;
 }
+
+.buttons button:hover svg path {
+    fill: #ffffff;
+}
+
 
 .buttons button:hover {
     background: rgb(0, 0, 0)
@@ -116,12 +123,12 @@
 
 .buttons .noselect1:hover .icon {
     /* transform: translateX(-100.5px); */
-    margin-right: 41%;
+    margin-right: 36%;
 }
 
 .buttons .noselect2:hover .icon {
     /* transform: translateX(-60.5px); */
-    margin-right: 41%;
+    margin-right: 43%;
 
 }
 
@@ -143,9 +150,9 @@
     /* Center the icon horizontally */
     font-size: 24px;
     /* Adjust the font size as needed */
-    color: #555;
+    /* color: #555; */
     /* Icon color */
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: fill 0.3s;
     animation: scrollUpDown 2s linear infinite;
     /* Apply the animation */
@@ -170,11 +177,8 @@
 }
 
 .scrolldown svg path {
-    transition: fill 0.3s;
-}
 
-.scrolldown:hover svg path {
-    fill: #000;
+    fill: #040D12;
 }
 
 @media (max-width: 768px) {
@@ -225,6 +229,10 @@
         margin-top: 10px;
     }
 
+    .buttons .noselect1 {
+        width: 100%;
+    }
+
     .buttons .noselect2 {
         width: 100%;
     }
@@ -244,13 +252,14 @@
     }
 
     .buttons .noselect1:hover .icon {
-        transform: translateX(-100.5px);
+        margin-right: 41%;
     }
 
     .buttons .noselect2:hover .icon {
-        transform: translateX(-100.5px);
+        margin-right: 41%;
     }
-    .scrolldown{
+
+    .scrolldown {
         display: none;
     }
 }
